@@ -411,6 +411,18 @@ const WalletPage: NextPage = () => {
   });
 
   const handleSubmitTx = async () => {
+    if (!contractAddress) {
+      notification.error("MultiSigWallet contract not found");
+      return;
+    }
+    if (!connectedAddress) {
+      notification.error("Connect your wallet first");
+      return;
+    }
+    if (!ownersArray.some(owner => owner.toLowerCase() === connectedAddress.toLowerCase())) {
+      notification.error("Connected wallet is not a multisig owner");
+      return;
+    }
     if (!isAddress(toAddr)) {
       notification.error("Invalid recipient address");
       return;
@@ -432,6 +444,17 @@ const WalletPage: NextPage = () => {
   const ownersArray = (owners as string[]) ?? [];
   const thresholdNum = threshold ? Number(threshold) : 1;
   const txTotal = txCount ? Number(txCount) : 0;
+  const isConnectedOwner =
+    !!connectedAddress && ownersArray.some(owner => owner.toLowerCase() === connectedAddress.toLowerCase());
+  const authorizeSequenceLabel = !contractAddress
+    ? "CONTRACT_UNAVAILABLE"
+    : !connectedAddress
+      ? "CONNECT_WALLET"
+      : !isConnectedOwner
+        ? "OWNER_REQUIRED"
+        : isSubmitting
+          ? "TRANSMITTING..."
+          : "AUTHORISE SEQUENCE";
   // Show newest first
   const txIndices = Array.from({ length: txTotal }, (_, i) => txTotal - 1 - i);
 
@@ -579,11 +602,11 @@ const WalletPage: NextPage = () => {
             </div>
           </div>
           <button
-            className="btn btn-primary w-full h-16 text-[11px] tracking-[0.6em] font-black shadow-[0_0_50px_rgba(0,122,255,0.3)] bg-[#0066FF] border-none rounded-2xl hover:scale-[1.01] transition-all"
-            disabled={!toAddr || isSubmitting || !contractAddress}
+            className="btn btn-primary w-full h-16 text-[11px] tracking-[0.6em] font-black !text-white shadow-[0_0_50px_rgba(0,122,255,0.3)] bg-[#0066FF] border-none rounded-2xl hover:scale-[1.01] transition-all disabled:!bg-slate-200 disabled:!text-slate-700 disabled:!opacity-100 disabled:shadow-none dark:disabled:!bg-white/10 dark:disabled:!text-white/70"
+            disabled={!isAddress(toAddr) || isSubmitting || !contractAddress || !connectedAddress || !isConnectedOwner}
             onClick={handleSubmitTx}
           >
-            {isSubmitting ? "TRANSMITTING..." : "AUTHORISE SEQUENCE"}
+            {authorizeSequenceLabel}
           </button>
         </div>
 
