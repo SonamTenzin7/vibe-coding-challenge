@@ -541,7 +541,10 @@ const WalletPage: NextPage = () => {
               </div>
             </div>
 
-            <button className="btn btn-primary w-full h-16 text-sm tracking-[0.4em] font-black shadow-[0_0_50px_rgba(0,122,255,0.3)] bg-[#0066FF] border-none rounded-2xl hover:scale-[1.01] transition-all">
+            <button
+              className="btn btn-primary w-full h-16 text-sm tracking-[0.4em] font-black shadow-[0_0_50px_rgba(0,122,255,0.3)] bg-[#0066FF] border-none rounded-2xl hover:scale-[1.01] transition-all"
+              onClick={() => document.getElementById("protocol-ledger")?.scrollIntoView({ behavior: "smooth" })}
+            >
               INITIALISE AUDIT
             </button>
           </div>
@@ -611,7 +614,10 @@ const WalletPage: NextPage = () => {
         </div>
 
         {/* Right Column - Audit Trail */}
-        <div className="glass-card rounded-[40px] p-12 border border-base-content/10 shadow-xl flex flex-col min-h-[700px] transition-all hover:shadow-[0_0_60px_rgba(255,255,255,0.02)]">
+        <div
+          id="protocol-ledger"
+          className="glass-card rounded-[40px] p-12 border border-base-content/10 shadow-xl flex flex-col min-h-[700px] transition-all hover:shadow-[0_0_60px_rgba(255,255,255,0.02)]"
+        >
           <div className="space-y-4 mb-12">
             <div className="flex items-center justify-between">
               <h2 className="text-2xl font-black uppercase tracking-[0.4em] text-base-content leading-tight">
@@ -643,6 +649,7 @@ const WalletPage: NextPage = () => {
                       <th className="px-4 py-6 font-black">ID</th>
                       <th className="px-6 py-6 font-black text-left">Target</th>
                       <th className="px-6 py-6 font-black text-left">Value</th>
+                      <th className="px-6 py-6 text-center font-black">Payload</th>
                       <th className="px-6 py-6 text-center font-black">Status</th>
                       <th className="px-6 py-6 text-right font-black">Actions</th>
                     </tr>

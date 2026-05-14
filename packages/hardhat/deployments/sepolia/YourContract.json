@@ -1,0 +1,256 @@
+{
+  "address": "0xDDE97b3a35abBA60c27e1cFD5342d26530F8a94A",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "greetingSetter",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "newGreeting",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "premium",
+          "type": "bool"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "GreetingChange",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "greeting",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "premium",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_newGreeting",
+          "type": "string"
+        }
+      ],
+      "name": "setGreeting",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalCounter",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "userGreetingCounter",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "transactionHash": "0x2e6800178ad343c5548d0bd7ffc1438a9c6fc9edecc9c0125c85b79323b67273",
+  "receipt": {
+    "to": null,
+    "from": "0x22aBb5776A07dE7591ADb3CfD82d0177662E01A8",
+    "contractAddress": "0xDDE97b3a35abBA60c27e1cFD5342d26530F8a94A",
+    "transactionIndex": 108,
+    "gasUsed": "481884",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x87813026a354762eaca28aabbba80894925785ff670c22a0317f8bc0dd038bc2",
+    "transactionHash": "0x2e6800178ad343c5548d0bd7ffc1438a9c6fc9edecc9c0125c85b79323b67273",
+    "logs": [],
+    "blockNumber": 10848992,
+    "cumulativeGasUsed": "12679535",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x22aBb5776A07dE7591ADb3CfD82d0177662E01A8"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "155daf6e357aab0815b46a0e59cbfe3c",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.30+commit.73712a01\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"greetingSetter\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"newGreeting\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"premium\",\"type\":\"bool\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"GreetingChange\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"greeting\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"premium\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_newGreeting\",\"type\":\"string\"}],\"name\":\"setGreeting\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalCounter\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"userGreetingCounter\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"author\":\"BuidlGuidl\",\"kind\":\"dev\",\"methods\":{\"setGreeting(string)\":{\"params\":{\"_newGreeting\":\"(string memory) - new greeting to save on the contract\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"setGreeting(string)\":{\"notice\":\"Function that allows anyone to change the state variable \\\"greeting\\\" of the contract and increase the counters\"},\"withdraw()\":{\"notice\":\"Function that allows the owner to withdraw all the Ether in the contract The function can only be called by the owner of the contract as defined by the isOwner modifier\"}},\"notice\":\"A smart contract that allows changing a state variable of the contract and tracking the changes It also allows the owner to withdraw the Ether in the contract\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/YourContract.sol\":\"YourContract\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/YourContract.sol\":{\"content\":\"//SPDX-License-Identifier: MIT\\npragma solidity >=0.8.0 <0.9.0;\\n\\n// Use openzeppelin to inherit battle-tested implementations (ERC20, ERC721, etc)\\n// import \\\"@openzeppelin/contracts/access/Ownable.sol\\\";\\n\\n/**\\n * A smart contract that allows changing a state variable of the contract and tracking the changes\\n * It also allows the owner to withdraw the Ether in the contract\\n * @author BuidlGuidl\\n */\\ncontract YourContract {\\n    // State Variables\\n    address public immutable owner;\\n    string public greeting = \\\"Building Unstoppable Apps!!!\\\";\\n    bool public premium = false;\\n    uint256 public totalCounter = 0;\\n    mapping(address => uint) public userGreetingCounter;\\n\\n    // Events: a way to emit log statements from smart contract that can be listened to by external parties\\n    event GreetingChange(address indexed greetingSetter, string newGreeting, bool premium, uint256 value);\\n\\n    // Constructor: Called once on contract deployment\\n    // Check packages/hardhat/deploy/00_deploy_your_contract.ts\\n    constructor(address _owner) {\\n        owner = _owner;\\n    }\\n\\n    // Modifier: used to define a set of rules that must be met before or after a function is executed\\n    // Check the withdraw() function\\n    modifier isOwner() {\\n        // msg.sender: predefined variable that represents address of the account that called the current function\\n        require(msg.sender == owner, \\\"Not the Owner\\\");\\n        _;\\n    }\\n\\n    /**\\n     * Function that allows anyone to change the state variable \\\"greeting\\\" of the contract and increase the counters\\n     *\\n     * @param _newGreeting (string memory) - new greeting to save on the contract\\n     */\\n    function setGreeting(string memory _newGreeting) public payable {\\n        // Change state variables\\n        greeting = _newGreeting;\\n        totalCounter += 1;\\n        userGreetingCounter[msg.sender] += 1;\\n\\n        // msg.value: built-in global variable that represents the amount of ether sent with the transaction\\n        if (msg.value > 0) {\\n            premium = true;\\n        } else {\\n            premium = false;\\n        }\\n\\n        // emit: keyword used to trigger an event\\n        emit GreetingChange(msg.sender, _newGreeting, msg.value > 0, msg.value);\\n    }\\n\\n    /**\\n     * Function that allows the owner to withdraw all the Ether in the contract\\n     * The function can only be called by the owner of the contract as defined by the isOwner modifier\\n     */\\n    function withdraw() public isOwner {\\n        (bool success, ) = owner.call{ value: address(this).balance }(\\\"\\\");\\n        require(success, \\\"Failed to send Ether\\\");\\n    }\\n\\n    /**\\n     * Function that allows the contract to receive ETH\\n     */\\n    receive() external payable {}\\n}\\n\",\"keccak256\":\"0x9953fa74a7dda9d9880fa47dc3a0e4f4485c1f8a0117cad9a1d980f49e3f9f02\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60e0604052601c60a09081527f4275696c64696e6720556e73746f707061626c6520417070732121210000000060c05260009061003c9082610127565b506001805460ff19169055600060025534801561005857600080fd5b5060405161095d38038061095d833981016040819052610077916101e5565b6001600160a01b0316608052610215565b634e487b7160e01b600052604160045260246000fd5b600181811c908216806100b257607f821691505b6020821081036100d257634e487b7160e01b600052602260045260246000fd5b50919050565b601f82111561012257806000526020600020601f840160051c810160208510156100ff5750805b601f840160051c820191505b8181101561011f576000815560010161010b565b50505b505050565b81516001600160401b0381111561014057610140610088565b6101548161014e845461009e565b846100d8565b6020601f82116001811461018857600083156101705750848201515b600019600385901b1c1916600184901b17845561011f565b600084815260208120601f198516915b828110156101b85787850151825560209485019460019092019101610198565b50848210156101d65786840151600019600387901b60f8161c191681555b50505050600190811b01905550565b6000602082840312156101f757600080fd5b81516001600160a01b038116811461020e57600080fd5b9392505050565b60805161072061023d6000396000818160a9015281816101a3015261020901526107206000f3fe6080604052600436106100745760003560e01c8063a41368621161004e578063a41368621461010c578063cea49c3c1461011f578063e0a73a931461014c578063ef690cc01461017657600080fd5b80633ccfd60b146100805780638da5cb5b1461009757806397feba9d146100e857600080fd5b3661007b57005b600080fd5b34801561008c57600080fd5b50610095610198565b005b3480156100a357600080fd5b506100cb7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b0390911681526020015b60405180910390f35b3480156100f457600080fd5b506100fe60025481565b6040519081526020016100df565b61009561011a366004610414565b6102c2565b34801561012b57600080fd5b506100fe61013a3660046104cd565b60036020526000908152604090205481565b34801561015857600080fd5b506001546101669060ff1681565b60405190151581526020016100df565b34801561018257600080fd5b5061018b610370565b6040516100df9190610543565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146102055760405162461bcd60e51b815260206004820152600d60248201526c2737ba103a34329027bbb732b960991b60448201526064015b60405180910390fd5b60007f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03164760405160006040518083038185875af1925050503d8060008114610272576040519150601f19603f3d011682016040523d82523d6000602084013e610277565b606091505b50509050806102bf5760405162461bcd60e51b81526020600482015260146024820152732330b4b632b2103a379039b2b7321022ba3432b960611b60448201526064016101fc565b50565b60006102ce82826105df565b506001600260008282546102e2919061069e565b909155505033600090815260036020526040812080546001929061030790849061069e565b90915550503415610323576001805460ff19168117905561032e565b6001805460ff191690555b60405133907f94cbd7e04dca26a7667654f6448b2ca0a40fec602118dc5fd8c82b9cf3c645ad9061036590849034801515916106c5565b60405180910390a250565b6000805461037d90610556565b80601f01602080910402602001604051908101604052809291908181526020018280546103a990610556565b80156103f65780601f106103cb576101008083540402835291602001916103f6565b820191906000526020600020905b8154815290600101906020018083116103d957829003601f168201915b505050505081565b634e487b7160e01b600052604160045260246000fd5b60006020828403121561042657600080fd5b813567ffffffffffffffff81111561043d57600080fd5b8201601f8101841361044e57600080fd5b803567ffffffffffffffff811115610468576104686103fe565b604051601f8201601f19908116603f0116810167ffffffffffffffff81118282101715610497576104976103fe565b6040528181528282016020018610156104af57600080fd5b81602084016020830137600091810160200191909152949350505050565b6000602082840312156104df57600080fd5b81356001600160a01b03811681146104f657600080fd5b9392505050565b6000815180845260005b8181101561052357602081850181015186830182015201610507565b506000602082860101526020601f19601f83011685010191505092915050565b6020815260006104f660208301846104fd565b600181811c9082168061056a57607f821691505b60208210810361058a57634e487b7160e01b600052602260045260246000fd5b50919050565b601f8211156105da57806000526020600020601f840160051c810160208510156105b75750805b601f840160051c820191505b818110156105d757600081556001016105c3565b50505b505050565b815167ffffffffffffffff8111156105f9576105f96103fe565b61060d816106078454610556565b84610590565b6020601f82116001811461064157600083156106295750848201515b600019600385901b1c1916600184901b1784556105d7565b600084815260208120601f198516915b828110156106715787850151825560209485019460019092019101610651565b508482101561068f5786840151600019600387901b60f8161c191681555b50505050600190811b01905550565b808201808211156106bf57634e487b7160e01b600052601160045260246000fd5b92915050565b6060815260006106d860608301866104fd565b9315156020830152506040015291905056fea26469706673582212208eee281669fe8c59bf48e46893b2d3ed417f98be91f44dd74aba5118fbb3acff64736f6c634300081e0033",
+  "deployedBytecode": "0x6080604052600436106100745760003560e01c8063a41368621161004e578063a41368621461010c578063cea49c3c1461011f578063e0a73a931461014c578063ef690cc01461017657600080fd5b80633ccfd60b146100805780638da5cb5b1461009757806397feba9d146100e857600080fd5b3661007b57005b600080fd5b34801561008c57600080fd5b50610095610198565b005b3480156100a357600080fd5b506100cb7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b0390911681526020015b60405180910390f35b3480156100f457600080fd5b506100fe60025481565b6040519081526020016100df565b61009561011a366004610414565b6102c2565b34801561012b57600080fd5b506100fe61013a3660046104cd565b60036020526000908152604090205481565b34801561015857600080fd5b506001546101669060ff1681565b60405190151581526020016100df565b34801561018257600080fd5b5061018b610370565b6040516100df9190610543565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146102055760405162461bcd60e51b815260206004820152600d60248201526c2737ba103a34329027bbb732b960991b60448201526064015b60405180910390fd5b60007f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03164760405160006040518083038185875af1925050503d8060008114610272576040519150601f19603f3d011682016040523d82523d6000602084013e610277565b606091505b50509050806102bf5760405162461bcd60e51b81526020600482015260146024820152732330b4b632b2103a379039b2b7321022ba3432b960611b60448201526064016101fc565b50565b60006102ce82826105df565b506001600260008282546102e2919061069e565b909155505033600090815260036020526040812080546001929061030790849061069e565b90915550503415610323576001805460ff19168117905561032e565b6001805460ff191690555b60405133907f94cbd7e04dca26a7667654f6448b2ca0a40fec602118dc5fd8c82b9cf3c645ad9061036590849034801515916106c5565b60405180910390a250565b6000805461037d90610556565b80601f01602080910402602001604051908101604052809291908181526020018280546103a990610556565b80156103f65780601f106103cb576101008083540402835291602001916103f6565b820191906000526020600020905b8154815290600101906020018083116103d957829003601f168201915b505050505081565b634e487b7160e01b600052604160045260246000fd5b60006020828403121561042657600080fd5b813567ffffffffffffffff81111561043d57600080fd5b8201601f8101841361044e57600080fd5b803567ffffffffffffffff811115610468576104686103fe565b604051601f8201601f19908116603f0116810167ffffffffffffffff81118282101715610497576104976103fe565b6040528181528282016020018610156104af57600080fd5b81602084016020830137600091810160200191909152949350505050565b6000602082840312156104df57600080fd5b81356001600160a01b03811681146104f657600080fd5b9392505050565b6000815180845260005b8181101561052357602081850181015186830182015201610507565b506000602082860101526020601f19601f83011685010191505092915050565b6020815260006104f660208301846104fd565b600181811c9082168061056a57607f821691505b60208210810361058a57634e487b7160e01b600052602260045260246000fd5b50919050565b601f8211156105da57806000526020600020601f840160051c810160208510156105b75750805b601f840160051c820191505b818110156105d757600081556001016105c3565b50505b505050565b815167ffffffffffffffff8111156105f9576105f96103fe565b61060d816106078454610556565b84610590565b6020601f82116001811461064157600083156106295750848201515b600019600385901b1c1916600184901b1784556105d7565b600084815260208120601f198516915b828110156106715787850151825560209485019460019092019101610651565b508482101561068f5786840151600019600387901b60f8161c191681555b50505050600190811b01905550565b808201808211156106bf57634e487b7160e01b600052601160045260246000fd5b92915050565b6060815260006106d860608301866104fd565b9315156020830152506040015291905056fea26469706673582212208eee281669fe8c59bf48e46893b2d3ed417f98be91f44dd74aba5118fbb3acff64736f6c634300081e0033",
+  "devdoc": {
+    "author": "BuidlGuidl",
+    "kind": "dev",
+    "methods": {
+      "setGreeting(string)": {
+        "params": {
+          "_newGreeting": "(string memory) - new greeting to save on the contract"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "setGreeting(string)": {
+        "notice": "Function that allows anyone to change the state variable \"greeting\" of the contract and increase the counters"
+      },
+      "withdraw()": {
+        "notice": "Function that allows the owner to withdraw all the Ether in the contract The function can only be called by the owner of the contract as defined by the isOwner modifier"
+      }
+    },
+    "notice": "A smart contract that allows changing a state variable of the contract and tracking the changes It also allows the owner to withdraw the Ether in the contract",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 7,
+        "contract": "contracts/YourContract.sol:YourContract",
+        "label": "greeting",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_string_storage"
+      },
+      {
+        "astId": 10,
+        "contract": "contracts/YourContract.sol:YourContract",
+        "label": "premium",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_bool"
+      },
+      {
+        "astId": 13,
+        "contract": "contracts/YourContract.sol:YourContract",
+        "label": "totalCounter",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 17,
+        "contract": "contracts/YourContract.sol:YourContract",
+        "label": "userGreetingCounter",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_mapping(t_address,t_uint256)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
